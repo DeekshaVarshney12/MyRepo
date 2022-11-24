@@ -17,6 +17,11 @@ pipeline {
                 echo 'Deploy App'
             }
         }
+        post {
+            always {
+                 build 'demo-first'
+            }
+        }
     }
 }
    
